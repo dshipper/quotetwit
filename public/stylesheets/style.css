@@ -1,0 +1,135 @@
+/*
+Theme Name: QuoteTwit
+Theme URI: http://www.quotetwit.com/
+Description: QuoteTwit theme.
+Version: 1.0
+Author: Dan Shipper
+Author URI: http://www.conveniencesoftware.com
+*/
+html{
+	height: 100%;
+}
+body{
+	background-image: url("images/bg.gif");
+	background-repeat: repeat-x;
+	background-color: #dcdcdc;
+	font: 30px Helvetica;
+	color: white; 
+	height: 100%;
+	width: 100%;
+	position: relative;
+	right: 6px;	
+}
+
+p{
+	
+}
+
+img{
+	border: 0;	
+}
+a {
+	outline: none;	
+}
+a img{
+	border: none;	
+}
+
+.container{
+	width: 800px;
+	margin: auto;
+}
+
+.searchboxdiv
+{
+ margin:0;
+ height:50px;
+ width:552px;
+ background:url("images/input-background.png") no-repeat bottom; 
+ position: relative;
+ bottom: 55px;
+ left: 190px;
+ padding-left: 10px;
+}
+
+
+.searchbox
+{
+ background:none;
+ border:none;
+ width:550px;
+ height:48px;
+ margin:0;
+ padding: 2px 7px 0px 7px;
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ font-size:20px;
+}
+
+.search-text{
+	position: relative;
+	bottom: 12px;
+}
+
+.codeboxdiv{
+	margin: 0;
+	width: 294px;
+	height: 193px;
+	background:url("images/codebox.png") no-repeat bottom;
+	position: relative;
+	bottom: 60px;
+	overflow: scroll;
+	
+}
+
+.codebox{
+	background: none;
+	border: none;
+	width: 280px;
+	height: 189px;
+	margin 0;
+	padding: 2px 7px 0px 7px;
+	 font-family:Verdana, Arial, Helvetica, sans-serif;
+	 font-size:30px;
+}
+
+.submitdiv{
+	position: relative;
+	bottom: -20px;
+	left: 10px;
+}
+
+.tag{
+	font: 30px Georgia;
+	margin: auto;
+	color: black;
+	position: relative;
+	bottom: 75px;
+}
+
+.tweetbox{
+	width: 810px;
+	height: 100px;
+	background: white;
+	position: relative;
+	bottom: 50px;
+	overflow: wrap;
+}
+
+.tweetbox-right{
+	float: right;
+	width: 380px;
+	height: 82px;
+	background: url("images/tweetbox.png") no-repeat bottom;
+	position: relative;
+	bottom: 50px;
+}
+
+#search_results{
+	color: black;
+	font: 12px Helvetica;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
