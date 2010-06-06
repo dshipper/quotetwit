@@ -18,17 +18,6 @@ class PagesController < ApplicationController
     @img['height="73"'] = 'height="53"'
     @img['width="73"'] = 'widht="53"'
     @timestamp = doc.at('span.published%20timestamp').inner_html
-    render_text "<div style='color:#333333;
-    font:'Lucida Grande',sans-serif; position: relative;'>
-    <div style='float: left;'>#{@img}</div>
-    <div style='position: relative; left: 5px;'>
-    <div style='font: 16px Helvetica; color: black;'>
-    <a href='http://www.twitter.com/#{@user}'>#{@user}</a>: #{@tweet}<br>
-    </div>
-    <div class='timestamp' style='font-size: 12px;'>about #{@timestamp}</div>
-    </div>
-    </div>"
-     
     
   end
 
