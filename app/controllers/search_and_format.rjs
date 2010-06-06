@@ -1,3 +1,5 @@
+page[:search_results].value = ""
+page[:search_results].reload
 page.replace_html 'preview', :inline => "<div style='color:#333333;
   font:'Lucida Grande',sans-serif; position: relative;'>
    <div style='float: left;'>#{@img}</div>
@@ -8,3 +10,4 @@ page.replace_html 'preview', :inline => "<div style='color:#333333;
    <div class='timestamp' style='font-size: 12px;'>about #{@timestamp}</div>
    </div>
    </div>"
+   

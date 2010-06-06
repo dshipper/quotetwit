@@ -1,11 +1,17 @@
 <br><br>
-<center><%= image_tag "logo.png" %></center><br>
+<center><a href="http://twitter.com/convisoft"><%= image_tag "logo.png" %></a></center><br>
 <div id="search_tweets">
-<% form_remote_tag(:url => {:action => 'search_and_format'},
-    :update => "search_results", :position => :bottom) do %>
-<div class="search-text">enter tweet url </div><div class="searchboxdiv"><input id="search" name="search" type="text" class="searchbox"></div>
+<% form_remote_for :search, :url => {:action => 'search_and_format'}, :html => { :id => 'search_form' } do |f| %>
+<div class="search-text">paste tweet url</div><div class="searchboxdiv"><input id="search" name="search" type="text" class="searchbox"></div>
 <div class="submitdiv"><%= submit_tag 'Go!' %></div>
 <% end %>
 </div>
 <div class="tag"><center>Easily quote tweets on your website or blog.</center></div>
+<div style="position: relative; bottom: 70px; font: 14px Helvetica; color: black;"><center>Just paste a link to a tweet into the box and press enter. </center></div>
 <div class="tweetbox"><div id="search_results"></div></div>
+<br>
+<div class="preview"><div id="preview"></div></div><br>
+<center>
+<div  style="position: relative; bottom: 70px; font: 14px Helvetica; color: black;">Don't have a tweet to use? Try this one: http://twitter.com/convisoft/status/15537348902</div>
+<div style="font: 12px Helvetica;"><a style="text-decoration: none; color: black; position: relative; bottom: 35px;" href="http://twitter.com/convisoft"> by Dan Shipper</a></div>
+</center>
